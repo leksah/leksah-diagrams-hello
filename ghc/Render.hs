@@ -10,6 +10,6 @@ defaultMain :: Diagram B -> IO ()
 defaultMain diagram = do
     renderSVG "test2.svg" (mkWidth 400) diagram
     dir <- getCurrentDirectory
-    putStrLn $ "<img src=\"file://" ++ dir ++ "/test2.svg\" />"
+    putStrLn $ "<a href=\"file://" ++ dir ++ "/test2.svg\">Click Here</a>"
 
 
